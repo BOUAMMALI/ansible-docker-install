@@ -1,4 +1,4 @@
-# 📘 README — Projet 11 : Installer Docker + Docker Compose avec Ansible
+# 📘 README — Projet : Installer Docker + Docker Compose avec Ansible
 
 ## 🎯 Objectif
 Automatiser l’installation de **Docker Engine**, **Docker CLI**, **Docker Buildx** et **Docker Compose (plugin officiel)** sur des hôtes Ubuntu/Debian avec **Ansible**. Le rôle est **idempotent**, **lisible** et **prêt pour CI/CD**.
