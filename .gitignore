@@ -1,0 +1,73 @@
+# --- Ansible ---
+# Clés privées, vault, fichiers sensibles
+*.retry
+*.vault
+*.vault-password
+vault_pass.txt
+secret.yml
+secrets/
+credentials/
+*.pem
+*.key
+
+# Inventaires sensibles
+inventory/*
+!inventory/sample_inventory.ini
+
+# Variables locales non versionnées
+group_vars/*.yml.local
+host_vars/*.yml.local
+
+# Cache Ansible
+.ansible/
+*.retry
+
+# Roles installés via Galaxy (ne pas versionner si installés automatiquement)
+roles/*
+!roles/requirements.yml
+
+# Collections installées (si non voulues dans Git)
+collections/
+ansible_collections/
+
+# --- Docker ---
+# Répertoires de build, volumes, artefacts
+**/__pycache__/
+**/*.pyc
+
+# Docker build caches
+.docker/
+docker-build/
+tmp/
+cache/
+
+# Docker Compose override (local only)
+docker-compose.override.yml
+
+# --- Logs ---
+*.log
+logs/
+debug.log
+
+# --- Python (si Ansible via venv) ---
+venv/
+.env/
+.envrc
+*.swp
+*.swo
+*.pid
+
+# --- OS / IDE ---
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# IntelliJ / PyCharm
+.idea/
+
